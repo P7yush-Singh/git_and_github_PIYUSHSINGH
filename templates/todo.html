@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,31 +68,28 @@
         }
     </style>
 </head>
+
 <body>
     <main class="container">
         <h1>To-Do Manager</h1>
         <p>Create a new to-do item.</p>
 
         <form action="/submittodoitem" method="POST">
+            <label for="itemId">Item ID</label>
+            <input type="number" id="itemId" name="itemId" placeholder="Enter item ID" required>
+            <label for="itemUUID">Item UUID</label>
+            <input type="text" id="itemUUID" name="itemUUID" placeholder="Enter item UUID" required>
+            <label for="itemHash">Item Hash</label>
+            <input type="text" id="itemHash" name="itemHash" placeholder="Enter item hash" required>
             <label for="itemName">Item Name</label>
-            <input
-                type="text"
-                id="itemName"
-                name="itemName"
-                placeholder="Enter item name"
-                required
-            >
+            <input type="text" id="itemName" name="itemName" placeholder="Enter item name" required>
 
             <label for="itemDescription">Item Description</label>
-            <textarea
-                id="itemDescription"
-                name="itemDescription"
-                placeholder="Describe your task"
-                required
-            ></textarea>
+            <textarea id="itemDescription" name="itemDescription" placeholder="Describe your task" required></textarea>
 
             <button type="submit">Submit To-Do Item</button>
         </form>
     </main>
 </body>
+
 </html>
