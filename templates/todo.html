@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 - To-Do Manager</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 560px;
+            margin: 30px auto;
+            padding: 32px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 20px 0 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 22px;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <h1>To-Do Manager</h1>
+        <p>Create a new to-do item.</p>
+
+        <form action="/submittodoitem" method="POST">
+            <label for="itemName">Item Name</label>
+            <input
+                type="text"
+                id="itemName"
+                name="itemName"
+                placeholder="Enter item name"
+                required
+            >
+
+            <label for="itemDescription">Item Description</label>
+            <textarea
+                id="itemDescription"
+                name="itemDescription"
+                placeholder="Describe your task"
+                required
+            ></textarea>
+
+            <button type="submit">Submit To-Do Item</button>
+        </form>
+    </main>
+</body>
+</html>
