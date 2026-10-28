@@ -1,22 +1,33 @@
+
 [
     {
         "id": 1,
         "name": "Piyush",
-        "course": "DevOps"
+        "course": "DevOps",
+        "status": "Completed"
     },
     {
         "id": 2,
         "name": "Pooja",
-        "course": "Python + Django"
+        "course": "Python",
+        "status": "In Progress"
     },
     {
         "id": 3,
         "name": "Priyanshu",
-        "course": "Cloud Computing + AWS"
+        "course": "Cloud Computing",
+        "status": "Completed"
     },
     {
         "id": 4,
         "name": "Shehzadi",
-        "course": "Devops + SAP"
+        "course": "SAP",
+        "status": "In Progress"
+    },
+    {
+        "id": 5,
+        "name": "Aman",
+        "course": "Git and GitHub",
+        "status": "New"
     }
 ]
