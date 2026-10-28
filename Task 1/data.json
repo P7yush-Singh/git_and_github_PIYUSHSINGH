@@ -7,16 +7,16 @@
     {
         "id": 2,
         "name": "Pooja",
-        "course": "Python"
+        "course": "Python + Django"
     },
     {
         "id": 3,
         "name": "Priyanshu",
-        "course": "Cloud Computing"
+        "course": "Cloud Computing + AWS"
     },
     {
         "id": 4,
         "name": "Shehzadi",
-        "course": "SAP"
+        "course": "Devops + SAP"
     }
 ]
